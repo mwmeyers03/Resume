@@ -1,0 +1,168 @@
+\documentclass[9pt,letterpaper]{article}
+
+%-----------------------------------------------------------
+% PACKAGES & SETTINGS
+%-----------------------------------------------------------
+\usepackage[margin=0.3in]{geometry} % Narrower margins
+\usepackage[default]{lato}          % Clean, compact sans-serif font
+\usepackage{fontawesome5}           % Icons for GitHub, LinkedIn, Email, Phone
+\usepackage{enumitem}               % Tighter bullet spacing
+\usepackage{xcolor}                 % Color for headings
+\usepackage{hyperref}               % Clickable links
+\usepackage{parskip}                % No paragraph indentation
+
+% Custom color
+\definecolor{myblue}{RGB}{0, 102, 204} % Professional blue
+
+% Optimized list spacing:
+\setlist[itemize]{leftmargin=*, itemsep=1pt, topsep=0pt, parsep=0pt}
+\setlength{\parskip}{0pt} % Minimal paragraph spacing
+
+\pagestyle{empty}  % No page numbers
+
+% Section headings with NO EXTRA SPACE ABOVE OR BELOW
+\newcommand{\sectionHeading}[1]{%
+  \noindent\textbf{\large\textcolor{myblue}{#1}}%
+  \par\vspace{-1.5ex}%  <-- adjust this value
+  \noindent\textcolor{myblue}{\rule{\linewidth}{0.7pt}}%
+}
+
+\begin{document}
+
+%----------------- HEADER -----------------%
+\begin{center}
+  {\LARGE \textbf{Michael Meyers}}\\
+  \vspace{0.5pt}
+  Titusville, FL \quad 
+  \href{mailto:mwmeyers03@gmail.com}{\textcolor{myblue}{\faEnvelope\; mwmeyers03@gmail.com}}\quad
+  \faPhone\; 407-782-2620\quad
+  \href{https://github.com/mwmeyers03}{\textcolor{myblue}{\faGithub\; mwmeyers03}}\quad
+  \href{https://www.linkedin.com/in/michael-meyers-37b0071b1/}{\textcolor{myblue}{\faLinkedin\; LinkedIn}}
+\end{center}
+
+%\textcolor{myblue}{\rule{\linewidth}{0.7pt}}
+
+%----------------- EDUCATION -----------------%
+\sectionHeading{Education}
+\textbf{University of Central Florida} 
+\hfill \textit{Est. Graduation: Dec 2026}\\
+\textit{M.S. in Electrical Engineering} \quad(\textbf{GPA:} 4.0)\\
+\textbf{University of Central Florida} 
+\hfill \textit{May 2025}\\
+\textit{B.S. in Electrical Engineering, B.S. in Biomedical Sciences} \quad(\textbf{GPA:} 3.75)\\
+Minor in Mathematical Biology, Honors in the Majors
+
+%----------------- WORK EXPERIENCE -----------------%
+\sectionHeading{Work Experience}
+
+\textbf{Associate Electromechanical Engineer -- Northrop Grumman}
+\hfill \textit{June 2025 -- Present}\\
+Melbourne, FL
+\begin{itemize}
+  \item Design electrical diagrams for instrumentation setup on the TACAMO Program.
+  \item Design and deliver cable‑assembly wiring diagrams and harness layouts in AutoCAD Electrical, ensuring strict compliance with MIL‑STD‑1553, MIL‑STD‑1760, and other relevant aerospace electromechanical standards.
+  \item Manage the end‑to‑end review cycle in an Agile environment, conducting peer‑reviews and status updates that guarantee drawing accuracy and timely approvals across multidisciplinary teams.
+
+
+
+ 
+\end{itemize}
+
+\textbf{Associate Control Systems Engineer -- Mitsubishi Power Americas} 
+\hfill \textit{Sep 2024 -- May 2025}\\
+Lake Mary, FL
+\begin{itemize}
+  \item Designed and assessed gas turbine control systems, focusing on HMI and validating control logic.
+  \item Developed scripts to streamline lengthy workflows through VBA automation, saving 300 hours annually and enhancing accuracy.
+  \item Conducted thorough communication tests for digital and analog I/O to validate control system functionality.
+  \item  Led the installation, setup and backup of essential control system machines, including network switches and servers.
+\end{itemize}
+
+\textbf{Integration \& Test Engineer Intern -- Northrop Grumman}
+\hfill \textit{May 2023 -- Sep 2024}\\
+Melbourne, FL
+\begin{itemize}
+  \item Established essential lab infrastructure to improve team accessibility and performance.
+  \item Supported Lab Operations across all Integrated Platform Tests (IPTs) on the Strike Program's SEL.
+  \item Created automation scripts in Python, PowerShell, and Groovy, saving ~500 hours annually.
+  \item Aided overall lab operations and test support of real‐time systems and subsystems in over 5 labs.
+\end{itemize}
+
+\textbf{Undergraduate Research Assistant -- UCF NanoBioSensors Laboratory}
+\hfill \textit{May 2022 -- Jan 2024}\\
+Orlando, FL
+\begin{itemize}
+  \item Conducted research and development of a wireless bioimpedance sensor leveraging BLE technology, utilizing a 2-layer FlexPCB.
+  \item Integrated a novel 3D‐printed microsensor with microcontrollers to enhance capabilities.
+  \item Fabricated and characterized impedance measurements of sensing devices for accuracy.
+\end{itemize}
+
+\textbf{Manufacturing Engineer Intern -- MtronPTI}
+\hfill \textit{Oct 2022 -- May 2023}\\
+Orlando, FL
+\begin{itemize}
+  \item Built electrical and electronic systems, including a temperature‐regulated curing oven and an acid mixer.
+  \item Analyzed component specifications and evaluated compliance with documented requirements.
+  \item Tested and recorded product performance, including phase noise analysis and capacitor dicing.
+  \item Documented processes and procedures for troubleshooting various oscillator fixtures.
+\end{itemize}
+
+%----------------- SKILLS -----------------%
+\sectionHeading{Skills}
+{\small
+\begin{itemize}
+  \item \textbf{Programming Languages:} Python | Java | C | C++ | PowerShell | Verilog | SQL | MATLAB | UML/SysML
+  \item \textbf{Classes:} Electronics 2 | Image Processing | DSP Applications | Mathematical Biology | SAW Devices \& Systems | Computer Vision
+  \item \textbf{Software:} AutoCAD Electrical
+ % | IsoPro% 
+  | SolidWorks | KiCAD/Altium | Jira | Confluence | Bitbucket | Bamboo | Cameo | Ansys EM | ADS
+  \item \textbf{Certifications:} Biotechnician Assistant | Photoshop | Microsoft PowerPoint | Word | Excel
+\end{itemize}
+}
+
+%----------------- PROJECTS -----------------%
+\sectionHeading{Projects}
+
+\textbf{Net Worth Projection App -- Personal Project}
+\hfill \textit{Feb 2026 -- Present}
+\begin{itemize}
+  \item Engineered a financial simulation platform using Svelte, TypeScript, and Web Workers to model multi-decade retirement outcomes, portfolio growth, cash flow, and withdrawal sustainability for dual-income households.
+  \item Developed a scenario-analysis engine (Conservative/Expected/Aggressive) with allocation-based return modeling, retirement trigger logic, failure-year detection, ending-balance retention metrics, and exportable reporting (CSV/JSON) for decision support.
+  \item Built advanced parameter-management UX with state-driven controls (person-specific and combined views), reactive data stores, and high-performance computation offloading to deliver responsive retirement projections under varying market conditions.
+\end{itemize}
+
+\textbf{DIY Digital Audio Mixer -- University of Central Florida}
+\hfill \textit{May 2024 -- May 2025}
+\begin{itemize}
+  \item Conducted research and development on analog audio circuitry to design a low-cost, high-performance audio mixer.
+  \item Designed four separate compact 4-layer PCBs to accommodate the full mixed-signal chain while supporting phantom power capabilities (Power Supply PCB, STM32 MCU PCB, Analog Signal PCB, Digital Signal PCB).
+  \item Programmed DSP algorithms on a Raspberry Pi 5 system to enable real-time, 8-channel audio processing.
+  \item Achieved an overall SNR of 50, $<$10ms latency and supported 8-channel real-time control via webapp and functional AI automixing feature.
+\end{itemize}
+
+
+
+% \textbf{Garduino -- Robotics Club of Central Florida} 
+% \hfill \textit{Feb 2022 -- Jul 2022}
+% \begin{itemize}
+%   \item Improved greenhouse designs in SolidWorks, optimizing the roofing system for efficient control.
+%   \item Developed a C++ automation system to monitor moisture sensor data and automate greenhouse ventilation.
+% \end{itemize}
+
+% %----------------- CAMPUS INVOLVEMENT -----------------%
+% \sectionHeading{Campus Involvement}
+
+% \textbf{IEEE EMBS UCF -- Founder \& President}
+% \hfill \textit{May 2024 -- May 2025}
+% \begin{itemize}
+%   \item Planned and organized all aspects of a new student branch, supporting over 100 members.
+%   \item Secured \$4,000 in sponsorship funding for student-led projects (Oxygen Concentrator, Sole Pressure Sensor).
+% \end{itemize}
+
+% \textbf{IEEE UCF -- Secretary \& Outreach Chair}
+% \hfill \textit{Nov 2022 -- May 2024}
+% \begin{itemize}
+%   \item Authored and managed the biweekly IEEE newsletter for 300+ students and obtained over \$10,000 in sponsorships.
+% \end{itemize}
+
+\end{document}
